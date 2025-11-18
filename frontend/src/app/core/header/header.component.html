@@ -1,0 +1,41 @@
+<header class="site-header" [class.scrolled]="scrolled" role="banner">
+  <div class="container">
+    <div class="brand">
+      <!-- Burger (mobile) -->
+      <button class="burger" type="button" aria-label="Abrir menú" (click)="toggleMobileMenu()" [attr.aria-expanded]="mobileOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Logo -->
+      <a class="logo" routerLink="/" aria-label="Inicio">
+        <span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span>
+        <span class="logo-text">demo</span>
+      </a>
+    </div>
+
+    <!-- Main nav mobile -->
+    <nav class="main-nav" [class.open]="mobileOpen" role="navigation" aria-label="Menú principal">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" routerLink="/clinicas">Clínicas</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/tratamientos">Tratamientos</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/pacientes">Pacientes</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contacto">Contactanos</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <!-- My contact number -->
+      <a class="phone" href="tel:+4443122257" aria-label="Llamar">
+        <span class="material-symbols-outlined" aria-hidden="true">call</span>
+        444 312 2257
+      </a>
+
+      <a class="cta" routerLink="/agendar">Agenda gratis</a>
+    </div>
+  </div>
+
+  <!-- overlay to close mobile menu -->
+  <div class="overlay" *ngIf="mobileOpen" (click)="closeAll()" aria-hidden="true"></div>
+</header>
