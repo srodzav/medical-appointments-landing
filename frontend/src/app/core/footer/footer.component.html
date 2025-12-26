@@ -1,0 +1,71 @@
+<footer class="footer" role="contentinfo" aria-labelledby="footer-brand">
+  <div class="footer-container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-about">
+        <a class="logo" routerLink="/" aria-label="Inicio">
+          <span class="material-symbols-outlined" aria-hidden="true">health_and_safety</span>
+          <span class="logo-text">demo</span>
+        </a>
+        <p class="lead">Cuidamos tu salud dental con atención profesional y planes accesibles para toda la familia.</p>
+
+        <div class="socials" aria-hidden="Redes Sociales">
+          <a href="#" aria-label="Facebook" class="social"><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
+          <a href="#" aria-label="Twitter" class="social"><span class="fab fa-twitter" aria-hidden="true"></span></a>
+          <a href="#" aria-label="Instagram" class="social"><span class="fab fa-instagram" aria-hidden="true"></span></a>
+        </div>
+      </div>
+
+      <!-- Links columns -->
+      <div class="footer-links">
+        <div class="col">
+          <h4>Tratamientos</h4>
+          <ul>
+            <li><a href="#">Ortodoncia</a></li>
+            <li><a href="#">Implantes</a></li>
+            <li><a href="#">Estética</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#">Buscar clínica</a></li>
+            <li><a href="#">Membresías</a></li>
+            <li><a href="#">Área del paciente</a></li>
+            <li><a href="#">Contactanos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Subscribe / Contact -->
+      <div class="footer-subscribe">
+        <h4>Suscríbete</h4>
+        <p>Recibe ofertas y novedades. Sin spam — cancela cuando quieras.</p>
+
+        <form class="subscribe-form" (ngSubmit)="onSubmit()">
+          <input type="email" placeholder="tu@email.com" name="email" [(ngModel)]="email" required />
+          <button type="submit" class="btn">Suscribirme</button>
+        </form>
+
+        <div class="contact">
+          <div>
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <a href="tel:+4443122257">&nbsp;&nbsp;444 312 2257</a>
+          </div>
+          <div>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:contact@sebatianrdz.com">&nbsp;&nbsp;contact&#64;sebastianrdz.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    ©2025
+    <a target="_blank" href="https://sebastianrdz.com">sebastianrdz</a>
+    — Todos los derechos reservados.
+  </div>
+</footer>
