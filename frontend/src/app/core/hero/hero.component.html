@@ -16,11 +16,11 @@
 
       <!-- Contact -->
       <div class="hero-actions">
-        <a routerLink="/agendar" class="btn btn-primary">
+        <a href="#contacto" (click)="scrollToSection($event, 'contacto')" class="btn btn-primary">
           <span class="material-symbols-outlined">calendar_month</span>
           Agenda tu cita gratuita
         </a>
-        <a routerLink="/tratamientos" class="btn btn-secondary">
+        <a href="#tratamientos" (click)="scrollToSection($event, 'tratamientos')" class="btn btn-secondary">
           <span class="material-symbols-outlined">info</span>
           Conoce nuestros tratamientos
         </a>

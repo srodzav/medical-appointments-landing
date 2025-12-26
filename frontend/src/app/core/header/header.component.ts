@@ -51,6 +51,25 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
   }
 
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault();
+    this.closeAll();
+
+    if (isPlatformBrowser(this.platformId)) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 0;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    }
+  }
+
   @HostListener('document:keydown.escape')
   onEscape() {
     this.closeAll();
