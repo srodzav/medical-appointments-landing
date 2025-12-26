@@ -31,7 +31,7 @@
           </li>
         </ul>
 
-        <a routerLink="/agendar" class="card-cta">
+        <a href="#contacto" (click)="scrollToSection($event, 'contacto')" class="card-cta">
           Agendar consulta
           <span class="material-symbols-outlined">arrow_forward</span>
         </a>
@@ -44,7 +44,7 @@
         <h3>¿No estás seguro cuál tratamiento es para ti?</h3>
         <p>Agenda una consulta gratuita y nuestros especialistas te ayudarán a elegir la mejor opción.</p>
       </div>
-      <a routerLink="/agendar" class="btn btn-primary">
+      <a href="#contacto" (click)="scrollToSection($event, 'contacto')" class="btn btn-primary">
         <span class="material-symbols-outlined">calendar_month</span>
         Agenda tu consulta gratis
       </a>
